@@ -1,0 +1,15 @@
+import java.util.*;
+public class MinIntoYearsAndDays 
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("ENTER THE NUMBER OF MINUTES : ");
+		long min=sc.nextLong();
+		int years,days;
+		years=(int)min/518400;
+		min=min%518400;
+		days=(int)min/1440;
+		System.out.println(min+" MINUTES IS APPROXIMATELY "+years+" YEARS "+days+" DAYS");
+	}
+}
